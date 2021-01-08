@@ -1,0 +1,9 @@
+<h1>Blogs You Have Written</h1>
+<p>
+  <button type="button" (click)="create()">New</button> | 
+  <button [routerLink]="['/login']">Logout</button>
+</p>
+<span *ngFor="let entry of entries">
+  <h2>{{ entry.blog.title }}</h2>
+  <p>{{ entry.blog.content }}</p>
+</span>
